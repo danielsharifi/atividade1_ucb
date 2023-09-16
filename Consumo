@@ -1,0 +1,18 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        int distanciaPercorrida;
+        double combustivelGasto, consumoMedio;
+
+        // Leitura dos valores de entrada
+        distanciaPercorrida = int.Parse(Console.ReadLine());
+        combustivelGasto = double.Parse(Console.ReadLine());
+
+        // Cálculo do consumo médio
+        consumoMedio = distanciaPercorrida / combustivelGasto;
+
+        // Exibição do resultado com 3 casas decimais e a mensagem "km/l"
+        Console.WriteLine($"{consumoMedio:F3} km/l");
+    }
+}
