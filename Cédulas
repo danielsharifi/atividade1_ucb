@@ -1,0 +1,21 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        int valor, resto;
+        int[] notas = { 100, 50, 20, 10, 5, 2, 1 };
+
+        // Leitura do valor
+        valor = int.Parse(Console.ReadLine());
+
+        Console.WriteLine(valor);
+
+        // Calculo das notas necessárias
+        foreach (int nota in notas) {
+            int quantidadeNotas = valor / nota;
+            Console.WriteLine($"{quantidadeNotas} nota(s) de R$ {nota},00");
+            resto = valor % nota;
+            valor = resto;
+        }
+    }
+}
