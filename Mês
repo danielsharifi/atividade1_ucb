@@ -1,0 +1,20 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        string[] months = {
+            "January", "February", "March", "April",
+            "May", "June", "July", "August",
+            "September", "October", "November", "December"
+        };
+
+        // Read the integer value
+        int value = int.Parse(Console.ReadLine());
+
+        if (value >= 1 && value <= 12) {
+            // Display the name of the corresponding month
+            string monthName = months[value - 1]; // Subtract 1 to adjust the array index
+            Console.WriteLine(monthName);
+        }
+    }
+}
