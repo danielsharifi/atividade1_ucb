@@ -1,0 +1,17 @@
+using System;
+
+class Program {
+    static void Main(string[] args) {
+        int a, b, prod;
+
+        // Leitura dos valores inteiros
+        a = int.Parse(Console.ReadLine());
+        b = int.Parse(Console.ReadLine());
+
+        // Cálculo do produto
+        prod = a * b;
+
+        // Exibição do resultado
+        Console.WriteLine("PROD = " + prod);
+    }
+}
